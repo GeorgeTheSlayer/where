@@ -1,15 +1,60 @@
 ---
+import Header from "../components/Header.svelte";
+import Default from "../layouts/Default.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Default>
+	<div class="bg-primary-yellow w-full justify-center mt-4 p-8 flex">
+		<p
+			class="text-9xl text-primary-purple tracking-tighter basis-1/2 pl-64 w-fit"
+		>
+			Creating <br />Social <br /> Change <br />
+			<span class="underline-offset-1">Now</span>
+		</p>
+		<img
+			class="bg-transparent basis-1/2 w-1/6"
+			src="../../public/images/protest.jpg"
+			alt="Logo"
+		/>
+	</div>
+	<div class="text-6xl p-4 text-left hover:bg-primary-green">
+		<a href="/"
+			><p
+				class="text-6xl font-bold tracking-wide text-primary-green hover:text-primary-purple"
+			>
+				Why should I help others? <br />
+				<span class="font-light tracking-tight">By: Holland Sersen</span>
+			</p></a
+		>
+	</div>
+	<div class="bg-primary-red hover:bg-white py-4 pl-4">
+		<a href="/">
+			<p
+				class="text-6xl font-bold text-white hover:text-primary-red tracking-wide"
+			>
+				What can you do for social change? <br />
+				<span class="font-light tracking-tight">By: Holland Sersen</span>
+			</p>
+		</a>
+	</div>
+
+	<div
+		class="text-6xl p-4 text-left bg-primary-gray text-primary-green hover:bg-primary-green"
+	>
+		<a href="/">
+			<p class="hover:text-primary-gray">
+				Getting over your childhood trama by picking up trash. <br /> By: Holland
+				Sersen
+			</p>
+		</a>
+	</div>
+	<div
+		class="text-6xl p-4 text-left bg-primary-pink text-primary-purple hover:bg-primary-purple"
+	>
+		<a href="/">
+			<p class="hover:text-primary-pink">
+				I think someone just got shot outside my apartment.<br /> By: Holland Sersen
+			</p>
+		</a>
+	</div>
+</Default>

@@ -1,0 +1,22 @@
+---
+import Header from "../components/Header.svelte";
+import Footer from "../components/Footer.svelte";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Where's the Love?</title>
+  </head>
+  <body
+    class="flex flex-col w-full justify-center font-sans align-middle bg-primary-purple"
+  >
+    <Header />
+    <article>
+      <slot />
+    </article>
+    <Footer />
+  </body>
+</html>
